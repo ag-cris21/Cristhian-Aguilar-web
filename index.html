@@ -1,201 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head> 
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristhian Aguilar | Portfolio</title>
+  </head>
+  <body>
     <header>
-        <h1>Hola soy Cristhian</h1>
+      <nav>
+        <a href="#sobre-mi" data-i18n="nav.about"></a>
+        <a href="#proyectos" data-i18n="nav.projects"></a>
+        <a href="#tecnologias" data-i18n="nav.technologies"></a>
+        <a href="#mision" data-i18n="nav.mission"></a>
+        <a href="#contacto" data-i18n="nav.contact"></a>
+      </nav>
 
-        <p>
-            Soy estudiante interesado en la programacion el desarrollo web
-            Linux y la tecnologia
-        </p>
-
-        <nav>
-            <a href="#sobre-mi">Sobre mi</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#tecnologias">Tecnologias</a>
-            <a href="#mision">Mision y vision</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+      <select id="language">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
     </header>
 
     <main>
+      <section id="inicio">
+        <h1 data-i18n="hero.title"></h1>
+        <p data-i18n="hero.description"></p>
+      </section>
 
-        <section id="sobre-mi">
-            <h2>Sobre mi</h2>
+      <section id="sobre-mi">
+        <h2 data-i18n="about.title"></h2>
+        <div data-i18n-array="about.paragraphs"></div>
+      </section>
 
-            <p>
-                Soy estudiante del area de informatica y actualmente me encuentro
-                desarrollando mis conocimientos en programacion y tecnologia
-            </p>
+      <section id="mision">
+        <h2 data-i18n="mission.title"></h2>
+        <div data-i18n-array="mission.paragraphs"></div>
+      </section>
 
-            <p>
-                Me gusta aprender mediante la creacion de proyectos y experimentar
-                con diferentes tecnologias Tambien me interesa documentar los
-                procesos y compartir lo que voy aprendiendo
-            </p>
+      <section id="vision">
+        <h2 data-i18n="vision.title"></h2>
+        <div data-i18n-array="vision.paragraphs"></div>
+      </section>
 
-            <p>
-                Mi objetivo es continuar desarrollando mis habilidades poco a poco
-                y construir una base solida para mi futuro profesional
-            </p>
-        </section>
-        
-        <section id="mision">
-            <h2>Mision personal</h2>
+      <section id="tecnologias">
+        <h2 data-i18n="technologies.title"></h2>
+        <p data-i18n="technologies.description"></p>
+        <ul data-i18n-list="technologies.items"></ul>
+      </section>
 
-            <p>
-                Mi mision es desarrollar proyectos relacionados con la programacion
-                el desarrollo web Linux y otras areas de la informatica aplicando los
-                conocimientos que voy adquiriendo durante mi formacion.
-            </p>
+      <section id="proyectos">
+        <h2 data-i18n="projects.title"></h2>
+        <div id="projects-container"></div>
+      </section>
 
-            <p>
-                Busco aprender mediante la practica documentar mis proyectos y resolver
-                problemas utilizando la tecnologia como una herramienta de apoyo.
-            </p>
+      <section id="aprendizaje">
+        <h2 data-i18n="learning.title"></h2>
+        <ul data-i18n-list="learning.items"></ul>
+      </section>
 
-            <p>
-                Quiero apoyar el desarollo de software libre y proyectos tecnologicos que puedan
-                tener un impacto positivo en la sociedad
-            </p>
-        </section>
-
-        <section id="vision">
-            <h2>Vision personal</h2>
-
-            <p>
-                Mi vision es seguir creciendo como estudiante y desarrollador
-                fortaleciendo progresivamente mis conocimientos en programacion
-                desarrollo web Linux y otras areas de la tecnologia
-            </p>
-
-            <p>
-                En el futuro espero contar con la experiencia y los conocimientos
-                necesarios para participar en proyectos tecnologicos mas grandes y
-                continuar compartiendo lo que aprenda
-            </p>
-        </section>
-
-
-        <section id="tecnologias">
-            <h2>Tecnologias y herramientas</h2>
-
-            <p>
-                Actualmente tengo conocimientos basicos y me encuentro aprendiendo
-                las siguientes tecnologias y herramientas
-            </p>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>Git y GitHub</li>
-                <li>Linux</li>
-                <li>WordPress</li>
-            </ul>
-        </section>
-
-
-        <section id="proyectos">
-            <h2>Proyectos y experiencias</h2>
-
-            <article>
-                <h3>Debian Mini</h3>
-
-                <p>
-                    Proyecto personal en el que utilizo una computadora antigua
-                    como servidor con Debian A traves de este proyecto estoy
-                    aprendiendo sobre Linux servidores SSH Nginx Git y otros
-                    servicios
-                </p>
-            </article>
-
-
-            <article>
-                <h3>Construccion de una impresora 3D</h3>
-
-                <p>
-                    Proyecto personal de construccion de una impresora 3D utilizando
-                    diferentes componentes electronicos y mecanicos
-                </p>
-
-                <p>
-                    Este proyecto me permite aprender sobre Arduino electronica
-                    motores paso a paso firmware y diseño mecanico
-                </p>
-            </article>
-
-
-            <article>
-                <h3>Sistema de gestion de pasantias</h3>
-
-                <p>
-                    Proyecto relacionado con el desarrollo de una aplicacion web
-                    para la gestion y seguimiento de pasantias
-                </p>
-            </article>
-
-
-            <article>
-                <h3>Aprendizaje y experimentacion</h3>
-
-                <p>
-                    Tambien realizo diferentes proyectos pequeños para practicar
-                    programacion Linux Git y desarrollo web
-                </p>
-            </article>
-        </section>
-
-
-        <section id="aprendizaje">
-            <h2>Actualmente aprendiendo</h2>
-
-            <ul>
-                <li>Mejorar mis conocimientos de programacion</li>
-                <li>Desarrollo web</li>
-                <li>Linux y administracion de sistemas</li>
-                <li>Git y buenas practicas de documentacion</li>
-                <li>Servidores y servicios web</li>
-                <li>Automatizacion</li>
-            </ul>
-        </section>
-
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-
-            <p>
-                Puedes encontrar mis proyectos y mi proceso de aprendizaje en
-            </p>
-
-            <ul>
-                <li>
-                    <a href="https://github.com/ag-cris21" target="_blank">
-                        GitHub
-                    </a>
-                </li>
-
-                <li>
-                    Correo electronico crisaguilar212004@gmail.com
-                </li>
-            </ul>
-        </section>
-
+      <section id="contacto">
+        <h2 data-i18n="contact.title"></h2>
+        <p data-i18n="contact.description"></p>
+        <ul>
+          <li>
+            <a href="https://github.com/ag-cris21" target="_blank" rel="noreferrer">
+              <span data-i18n="contact.github"></span>
+            </a>
+          </li>
+          <li>
+            <span data-i18n="contact.email"></span>: crisaguilar212004@gmail.com
+          </li>
+        </ul>
+      </section>
     </main>
 
-
     <footer>
-        <p>
-            Cristhian Portafolio personal
-        </p>
+      <p data-i18n="footer.text"></p>
     </footer>
- 
-</body>
+
+    <script src="./js/app.js"></script>
+  </body>
 </html>
+
