@@ -13,7 +13,7 @@
   </head>
   <body class="container">
     
-    <header>
+    <header class="sticky-top bg-white ">
       <nav class="row align-items-center justify-content-between"> 
         <a href="#sobre-mi" data-i18n="nav.about" class="col-md-2 ali"></a>
         <a href="#proyectos" data-i18n="nav.projects" class="col-md-2"></a>
@@ -31,9 +31,14 @@
 
     <main>
       
-      <section id="inicio">
-        <h1 data-i18n="hero.title"></h1>
-        <p data-i18n="hero.description"></p>
+      <section id="inicio" class=" row text-center ">
+
+        <img src="img/fotoprueba.jpg" class="col-md-6 img-fluid rounded-top"  />
+    
+        <div class="col-6 flex-column d-flex justify-content-center align-items-center">
+        <h1 data-i18n="hero.title" class=""></h1 >
+        <p data-i18n="hero.description" class=""></p>
+        </div>
       </section>
 
       <section id="sobre-mi">
@@ -52,9 +57,9 @@
       </section>
 
       <section id="tecnologias">
-        <h2 data-i18n="technologies.title"></h2>
-        <p data-i18n="technologies.description"></p>
-        <ul data-i18n-list="technologies.items"></ul>
+        <h2 data-i18n="technologies.title" class="md-2"></h2>
+        <p data-i18n="technologies.description" class="text-muted "></p>
+        <ul data-i18n-list="technologies.items" class="row row-cols-2 row-cols-md-4"></ul>
       </section>
 
       <section id="proyectos">
