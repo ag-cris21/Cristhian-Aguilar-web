@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavBar } from './NavBar'
+import { Footer } from './Footer'
 
 
 function App() {
@@ -8,9 +9,10 @@ function App() {
   return (
     <>
       <NavBar />
-  
+      
+      <h1>holi</h1>
 
-  
+      <Footer />
     </>
   )
 }
