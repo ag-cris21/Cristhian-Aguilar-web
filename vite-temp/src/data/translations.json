@@ -1,0 +1,188 @@
+{
+  "es": {
+    "languageName": "Español",
+    "hero": {
+      "title": "Hola, soy Cristhian",
+      "description": "Soy estudiante interesado en la programación, el desarrollo web, Linux y la tecnología."
+    },
+    "nav": {
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "technologies": "Tecnologías",
+      "mission": "Misión y visión",
+      "contact": "Contacto"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "paragraphs": [
+        "Soy estudiante del área de informática y actualmente me encuentro desarrollando mis conocimientos en programación y tecnología.",
+        "Me gusta aprender mediante la creación de proyectos y experimentar con diferentes tecnologías. También me interesa documentar los procesos y compartir lo que voy aprendiendo.",
+        "Mi objetivo es continuar desarrollando mis habilidades poco a poco y construir una base sólida para mi futuro profesional."
+      ]
+    },
+    "mission": {
+      "title": "Misión personal",
+      "paragraphs": [
+        "Mi misión es desarrollar proyectos relacionados con la programación, el desarrollo web, Linux y otras áreas de la informática aplicando los conocimientos que voy adquiriendo durante mi formación.",
+        "Busco aprender mediante la práctica, documentar mis proyectos y resolver problemas utilizando la tecnología como una herramienta de apoyo.",
+        "Quiero apoyar el desarrollo de software libre y proyectos tecnológicos que puedan tener un impacto positivo en la sociedad."
+      ]
+    },
+    "vision": {
+      "title": "Visión personal",
+      "paragraphs": [
+        "Mi visión es seguir creciendo como estudiante y desarrollador, fortaleciendo progresivamente mis conocimientos en programación, desarrollo web, Linux y otras áreas de la tecnología.",
+        "En el futuro espero contar con la experiencia y los conocimientos necesarios para participar en proyectos tecnológicos más grandes y continuar compartiendo lo que aprenda."
+      ]
+    },
+    "technologies": {
+      "title": "Tecnologías y herramientas",
+      "description": "Actualmente tengo conocimientos básicos y me encuentro aprendiendo las siguientes tecnologías y herramientas.",
+      "items": [
+        "HTML",
+        "CSS",
+        "Java",
+        "Python",
+        "JavaScript",
+        "Git y GitHub",
+        "Linux",
+        "WordPress"
+      ]
+    },
+    "projects": {
+      "title": "Proyectos y experiencias",
+      "debian": {
+        "title": "Debian Mini",
+        "description": "Proyecto personal en el que utilizo una computadora antigua como servidor con Debian. A través de este proyecto estoy aprendiendo sobre Linux, servidores, SSH, Nginx, Git y otros servicios."
+      },
+      "printer": {
+        "title": "Construcción de una impresora 3D",
+        "paragraphs": [
+          "Proyecto personal de construcción de una impresora 3D utilizando diferentes componentes electrónicos y mecánicos.",
+          "Este proyecto me permite aprender sobre Arduino, electrónica, motores paso a paso, firmware y diseño mecánico."
+        ]
+      },
+      "internships": {
+        "title": "Sistema de gestión de pasantías",
+        "description": "Proyecto relacionado con el desarrollo de una aplicación web para la gestión y seguimiento de pasantías."
+      },
+      "experimentation": {
+        "title": "Aprendizaje y experimentación",
+        "description": "También realizo diferentes proyectos pequeños para practicar programación, Linux, Git y desarrollo web."
+      }
+    },
+    "learning": {
+      "title": "Actualmente aprendiendo",
+      "items": [
+        "Mejorar mis conocimientos de programación",
+        "Desarrollo web",
+        "Linux y administración de sistemas",
+        "Git y buenas prácticas de documentación",
+        "Servidores y servicios web",
+        "Automatización"
+      ]
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Puedes encontrar mis proyectos y mi proceso de aprendizaje en",
+      "email": "Correo electrónico",
+      "github": "GitHub"
+    },
+    "footer": {
+      "text": "Cristhian - Portafolio personal"
+    }
+  },
+  "en": {
+    "languageName": "English",
+    "hero": {
+      "title": "Hello, I'm Cristhian",
+      "description": "I am a student interested in programming, web development, Linux and technology."
+    },
+    "nav": {
+      "about": "About me",
+      "projects": "Projects",
+      "technologies": "Technologies",
+      "mission": "Mission and vision",
+      "contact": "Contact"
+    },
+    "about": {
+      "title": "About me",
+      "paragraphs": [
+        "I am a computer science student currently developing my knowledge in programming and technology.",
+        "I enjoy learning by creating projects and experimenting with different technologies. I am also interested in documenting processes and sharing what I learn.",
+        "My goal is to continue developing my skills step by step and build a strong foundation for my professional future."
+      ]
+    },
+    "mission": {
+      "title": "Personal mission",
+      "paragraphs": [
+        "My mission is to develop projects related to programming, web development, Linux and other areas of computer science while applying the knowledge I acquire during my education.",
+        "I seek to learn through practice, document my projects and solve problems using technology as a supporting tool.",
+        "I want to support open-source software development and technology projects that can have a positive impact on society."
+      ]
+    },
+    "vision": {
+      "title": "Personal vision",
+      "paragraphs": [
+        "My vision is to continue growing as a student and developer, progressively strengthening my knowledge in programming, web development, Linux and other areas of technology.",
+        "In the future, I hope to have the experience and knowledge necessary to participate in larger technology projects and continue sharing what I learn."
+      ]
+    },
+    "technologies": {
+      "title": "Technologies and tools",
+      "description": "I currently have basic knowledge and am learning the following technologies and tools.",
+      "items": [
+        "HTML",
+        "CSS",
+        "Java",
+        "Python",
+        "JavaScript",
+        "Git and GitHub",
+        "Linux",
+        "WordPress"
+      ]
+    },
+    "projects": {
+      "title": "Projects and experience",
+      "debian": {
+        "title": "Debian Mini",
+        "description": "Personal project in which I use an old computer as a Debian server. Through this project I am learning about Linux, servers, SSH, Nginx, Git and other services."
+      },
+      "printer": {
+        "title": "3D Printer Construction",
+        "paragraphs": [
+          "Personal project focused on building a 3D printer using different electronic and mechanical components.",
+          "This project allows me to learn about Arduino, electronics, stepper motors, firmware and mechanical design."
+        ]
+      },
+      "internships": {
+        "title": "Internship Management System",
+        "description": "Project focused on developing a web application for internship management and tracking."
+      },
+      "experimentation": {
+        "title": "Learning and Experimentation",
+        "description": "I also work on different small projects to practice programming, Linux, Git and web development."
+      }
+    },
+    "learning": {
+      "title": "Currently learning",
+      "items": [
+        "Improving my programming skills",
+        "Web development",
+        "Linux and system administration",
+        "Git and good documentation practices",
+        "Servers and web services",
+        "Automation"
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "You can find my projects and learning process on",
+      "email": "Email",
+      "github": "GitHub"
+    },
+    "footer": {
+      "text": "Cristhian - Personal portfolio"
+    }
+  }
+}
