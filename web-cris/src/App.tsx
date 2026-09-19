@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavBar } from './NavBar'
 import { Footer } from './Footer'
-
+import {mid} from './mid/mid'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,7 +10,7 @@ function App() {
     <>
       <NavBar />
       
-      <h1>holi</h1>
+      <mid/>
 
       <Footer />
     </>
