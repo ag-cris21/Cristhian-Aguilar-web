@@ -1,11 +1,11 @@
-import translations from '../data/translations.json'
+interface FooterProps {
+  t: (key: string) => string
+}
 
-export const Footer = () => {
+export const Footer = ({ t }: FooterProps) => {
   return (
-
     <footer>
-      <p data-i18n="footer.text">{translations.es.footer.text}</p>
+      <p>{t('footer.text')}</p>
     </footer>
-
   )
 }

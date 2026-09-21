@@ -1,22 +1,23 @@
-
-export const NavBar = ({}) => {  
+export function NavBar({ language, setLanguage, traduzir }: { language: string, setLanguage: (value: string) => void, traduzir: (key: string) => string }) {
     return (
-        <>
-        <header className="sticky-top bg-white ">
-          <nav className="row align-items-center justify-content-between"> 
-            <a href="#sobre-mi" data-i18n="nav.about" className="col-md-2 ali">sobre mi</a>
-            <a href="#proyectos" data-i18n="nav.projects" className="col-md-2">proyectos</a>
-            <a href="#tecnologias" data-i18n="nav.technologies" className="col-md-2">tecnologias</a>
-            <a href="#mision" data-i18n="nav.mission" className="col-md-2">mision</a>
-            <a href="#contacto" data-i18n="nav.contact" className="col-md-2">contacto</a>
-    
-            <select id="language" className="col-md-2">
-              <option value="es">Español</option>
-              <option value="en">English</option>
-            </select>
-          </nav>
-    
+        <header className="sticky-top bg-white">
+            <nav className="row align-items-center justify-content-between">
+                <a href="#sobre-mi" className="col-md-2 ali">{traduzir('nav.about')}</a>
+                <a href="#proyectos" className="col-md-2">{traduzir('nav.projects')}</a>
+                <a href="#tecnologias" className="col-md-2">{traduzir('nav.technologies')}</a>
+                <a href="#mision" className="col-md-2">{traduzir('nav.mission')}</a>
+                <a href="#contacto" className="col-md-2">{traduzir('nav.contact')}</a>
+
+                <select
+                    id="language"
+                    className="col-md-2"
+                    value={language}
+                    onChange={(e) => setLanguage(e.target.value)}>
+
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </nav>
         </header>
-        </>      
     )
-}        
+}

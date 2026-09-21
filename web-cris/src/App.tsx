@@ -1,20 +1,20 @@
-import { useState } from 'react'
 import { NavBar } from './NavBar'
 import { Footer } from './Footer'
-import {mid} from './mid/mid'
+import { Mid } from './mid/Mid'
+import { useIdioma } from './hooks/useI18n'
 
 function App() {
-  const [count, setCount] = useState(0)
+    const i18n = useIdioma()
 
-  return (
-    <>
-      <NavBar />
-      
-      <mid/>
-
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <NavBar language={i18n.language} setLanguage={i18n.setLanguage as any} traduzir={i18n.traducir} />
+            <main >
+                <Mid traducir={i18n.traducir} obtenerArray={i18n.obtenerArray} obtenerLista={i18n.obtenerLista} />
+            </main>
+            <Footer t={i18n.traducir} />
+        </>
+    )
 }
 
 export default App
