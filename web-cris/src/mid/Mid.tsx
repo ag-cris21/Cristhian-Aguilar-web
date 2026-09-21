@@ -1,6 +1,14 @@
-export const Mid = ({ traducir, obtenerArray, obtenerLista }: { traducir: (key: string) => string, obtenerArray: (key: string) => string[], obtenerLista: (key: string) => string[] }) => {
+import { Tecnologias } from "./tecnologias";
+
+export interface MidProps {
+    traducir: (key: string) => string;
+    obtenerArray: (key: string) => string[];
+    obtenerLista: (key: string) => string[];
+}
+
+export const Mid = ({ traducir, obtenerArray, obtenerLista }: MidProps) => {
     return (
-        <main>
+        <main className="container">
             <section id="inicio" className="row text-center">
                 <div className="col-6 flex-column d-flex justify-content-center align-items-center">
                     <h1>{traducir('hero.title')}</h1>
@@ -23,13 +31,9 @@ export const Mid = ({ traducir, obtenerArray, obtenerLista }: { traducir: (key: 
                     ))}
                 </div>
             </section>
-            <section id="tecnologias">
-                <h2>{traducir('technologies.title')}</h2>
-                <p>{traducir('technologies.description')}</p>
-                <ul>{obtenerLista('technologies.items').map((item, indice) => (
-                    <li key={indice}>{item}</li>
-                ))}</ul>
-            </section>
+
+            < Tecnologias traducir={traducir} obtenerLista={obtenerLista}  />
+            
             <section id="proyectos">
                 <h2>{traducir('projects.title')}</h2>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -47,6 +51,7 @@ export const Mid = ({ traducir, obtenerArray, obtenerLista }: { traducir: (key: 
                     </article>
                 </div>
             </section>
+
             <section id="contacto">
                 <h2>{traducir('learning.title')}</h2>
                 <ul>{obtenerLista('learning.items').map((item, indice) => (
