@@ -8,7 +8,7 @@ function App() {
 
     return (
         <>
-            <NavBar language={i18n.language} setLanguage={i18n.setLanguage as any} traduzir={i18n.traducir} />
+            <NavBar language={i18n.language} setLanguage={i18n.setLanguage} traduzir={i18n.traducir} />
             
             
                 <Mid traducir={i18n.traducir} obtenerArray={i18n.obtenerArray} obtenerLista={i18n.obtenerLista}/>

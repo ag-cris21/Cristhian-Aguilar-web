@@ -1,14 +1,10 @@
-export const Contacto = ({ traducir }: { traducir: (key: string) => string }) => {
+export const Contacto = ({ traducir, obtenerLista }: { traducir: (key: string) => string; obtenerLista: (key: string) => string[]  }) => {
     return (
-        <div>
-            <section id="aprendizaje">
+        <section id="contacto">
                 <h2>{traducir('learning.title')}</h2>
-                <ul>{traducir('learning.items').map((item: string, indice: number) => (
+                <ul>{obtenerLista('learning.items').map((item, indice) => (
                     <li key={indice}>{item}</li>
                 ))}</ul>
-            </section>
-
-            <section id="contacto">
                 <h2>{traducir('contact.title')}</h2>
                 <p>{traducir('contact.description')}</p>
                 <ul>
@@ -17,9 +13,10 @@ export const Contacto = ({ traducir }: { traducir: (key: string) => string }) =>
                             <span>{traducir('contact.github')}</span>
                         </a>
                     </li>
-                    <li>{traducir('contact.email')}: crisaguilar212004@gmail.com</li>
+                    <li>
+                        {traducir('contact.email')}: crisaguilar212004@gmail.com
+                    </li>
                 </ul>
             </section>
-        </div>
     )
 }

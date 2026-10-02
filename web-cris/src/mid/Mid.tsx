@@ -1,4 +1,8 @@
+import { Inicio } from "./inicio";
+import { SobreMi } from "./sobre-mi";
 import { Tecnologias } from "./tecnologias";
+import { Proyectos } from "./proyectos";
+import { Contacto} from "./contacto";
 
 export interface MidProps {
     traducir: (key: string) => string;
@@ -9,65 +13,17 @@ export interface MidProps {
 export const Mid = ({ traducir, obtenerArray, obtenerLista }: MidProps) => {
     return (
         <main className="container">
-            <section id="inicio" className="row text-center">
-                <div className="col-6 flex-column d-flex justify-content-center align-items-center">
-                    <h1>{traducir('hero.title')}</h1>
-                    <p>{traducir('hero.description')}</p>
-                </div>
-            </section>
-            <section id="sobre-mi">
-                <h2>{traducir('about.title')}</h2>
-                <div>
-                    {obtenerArray('about.paragraphs').map((texto, indice) => (
-                        <p key={indice}>{texto}</p>
-                    ))}
-                </div>
-            </section>
-            <section id="mision">
-                <h2>{traducir('mission.title')}</h2>
-                <div>
-                    {obtenerArray('mission.paragraphs').map((texto, indice) => (
-                        <p key={indice}>{texto}</p>
-                    ))}
-                </div>
-            </section>
-
-            < Tecnologias traducir={traducir} obtenerLista={obtenerLista}  />
             
-            <section id="proyectos">
-                <h2>{traducir('projects.title')}</h2>
-                <div className="row row-cols-1 row-cols-md-3 g-4">
-                    <article className="col-md-4">
-                        <h3>{traducir('projects.debian.title')}</h3>
-                        <p>{traducir('projects.debian.description')}</p>
-                    </article>
-                    <article className="col-md-4">
-                        <h3>{traducir('projects.printer.title')}</h3>
-                        <p>{traducir('projects.printer.paragraphs')[0]}</p>
-                    </article>
-                    <article className="col-md-4">
-                        <h3>{traducir('projects.internships.title')}</h3>
-                        <p>{traducir('projects.internships.description')}</p>
-                    </article>
-                </div>
-            </section>
-
-            <section id="contacto">
-                <h2>{traducir('learning.title')}</h2>
-                <ul>{obtenerLista('learning.items').map((item, indice) => (
-                    <li key={indice}>{item}</li>
-                ))}</ul>
-                <h2>{traducir('contact.title')}</h2>
-                <p>{traducir('contact.description')}</p>
-                <ul>
-                    <li>
-                        <a href="https://github.com/ag-cris21" target="_blank" rel="noreferrer">
-                            <span>{traducir('contact.github')}</span>
-                        </a>
-                    </li>
-                    <li>{traducir('contact.email')}: crisaguilar212004@gmail.com</li>
-                </ul>
-            </section>
+            <Inicio traducir={traducir} />
+            
+            <SobreMi traducir={traducir} obtenerArray={obtenerArray} />
+            
+           
+            <Tecnologias traducir={traducir} obtenerLista={obtenerLista} />
+            <Proyectos traducir={traducir} />
+            
+            <Contacto traducir={traducir} obtenerLista={obtenerLista} />
+            
         </main>
     )
 }

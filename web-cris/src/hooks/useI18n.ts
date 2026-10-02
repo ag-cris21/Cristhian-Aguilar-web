@@ -24,7 +24,7 @@ const idiomaInicial = "es"
 // Hook principal
 export function useIdioma() {
     // Estado React para el idioma, inicializado en "es"
-    const [language, setLanguage] = useState<"es" | "en">("es")
+    const [language, setLanguage] = useState<string>("es")
 
     // Efecto solo en el montaje (no es necesario actualizar desde variable global)
     useEffect(() => {
@@ -33,19 +33,19 @@ export function useIdioma() {
     // Función para traducir un texto individual
     // Ejemplo: t('hero.title') → "Hola, Cristhian" (en español)
     function traducir(clave: string): string {
-        // Buscar en el idioma actual primero, fallback a español
-        const resultado = getText(traducciones[language], clave)
+        // Buscar en el idioma actual usando getText con ruta completa "es.hero.title"
+        const resultado = getText(traducciones, language + "." + clave)
         return resultado !== undefined && resultado !== null ? resultado : clave
     }
 
     // Función para obtener array de párrafos
     function obtenerArray(clave: string): string[] {
-        const resultado = getText(traducciones[language], clave)
+        const resultado = getText(traducciones, language + "." + clave)
         if (Array.isArray(resultado)) {
             return resultado
         }
         // Fallback a español
-        const resultadoEs = getText(traducciones[idiomaInicial], clave)
+        const resultadoEs = getText(traducciones, idiomaInicial + "." + clave)
         return Array.isArray(resultadoEs) ? resultadoEs : []
     }
 
